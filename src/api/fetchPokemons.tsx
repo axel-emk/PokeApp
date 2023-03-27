@@ -12,7 +12,7 @@ export async function fetchPokemons(): Promise<Pokemon[]> {
     throw new Error(response.statusText);
   }
   const results = await response.json();
-  console.log("results", results);
+  
 //   Mapeo de datos
   const pokemons = results.results.map((pokemon: any) => ({
     name: pokemon.name,
