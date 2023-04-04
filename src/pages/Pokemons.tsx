@@ -28,7 +28,7 @@ const Pokemons = () => {
   if (isLoading || pokemons === null) {
     return <LoadingScreen />;
   }
-  const filterPokemons = pokemons?.slice(0, 151).filter((pokemon) =>{
+  const filterPokemons = pokemons?.slice(0, 900).filter((pokemon) =>{
     return pokemon.name.toLowerCase().match(query.toLowerCase());
   });
 
@@ -37,7 +37,7 @@ const Pokemons = () => {
       <Header query={query} setQuery={setQuery} />
       <main>
         <nav className={styles.nav}>
-          {filterPokemons?.slice(0, 151).map((pokemon) => (
+          {filterPokemons?.slice(0, 900).map((pokemon) => (
             <Link
               key={pokemon.id}
               className={styles.listItem}

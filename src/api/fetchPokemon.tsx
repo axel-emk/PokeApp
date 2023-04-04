@@ -22,6 +22,7 @@ export async function fetchPokemon(
     hp: result.stats[0]?.base_stat,
     attack: result.stats[1]?.base_stat,
     defense: result.stats[2]?.base_stat,
+    types: result.stats[3]?.base_stat,
   };
   return pokemon;
 }

@@ -50,6 +50,7 @@ const Pokemon = () => {
           <div>HP: {pokemon?.hp}</div>
           <div>Attack: {pokemon?.attack}</div>
           <div>Defense: {pokemon?.defense}</div>
+          <div>Type: {pokemon?.types}</div>
         </main>
       </div>
       <Footer />
