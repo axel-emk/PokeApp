@@ -41,7 +41,7 @@ export const PokemonProvider = ({ children }) => {
 		const baseURL = 'https://pokeapi.co/api/v2/';
 
 		const res = await fetch(
-			`${baseURL}pokemon?limit=100000&offset=0`
+			`${baseURL}pokemon?limit=649&offset=0`
 		);
 		const data = await res.json();
 

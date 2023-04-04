@@ -4,8 +4,6 @@ import { PokemonContext } from '../context/PokemonContext';
 import logo from '../assets/Pokédex_logo.png'
 
 export const Navigation = () => {
-
-
 	const { onInputChange, valueSearch, onResetForm } =
 		useContext(PokemonContext);
 
@@ -30,8 +28,7 @@ export const Navigation = () => {
 					/>
 				</Link>
 
-				<form >
-				{/* onSubmit={onSearchSubmit} */}
+				<form onSubmit={onSearchSubmit}>
 					<div className='form-group'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -51,8 +48,8 @@ export const Navigation = () => {
 							type='search'
 							name='valueSearch'
 							id=''
-							// value={valueSearch}
-							// onChange={onInputChange}
+							value={valueSearch}
+							onChange={onInputChange}
 							placeholder='Buscar nombre de pokemon'
 						/>
 					</div>
