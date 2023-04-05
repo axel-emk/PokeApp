@@ -30,6 +30,7 @@ export const PokemonProvider = ({ children }) => {
 			const data = await res.json();
 			return data;
 		});
+		
 		const results = await Promise.all(promises);
 
 		setAllPokemons([...allPokemons, ...results]);
